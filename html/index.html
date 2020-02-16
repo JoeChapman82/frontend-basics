@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Home - Cookie Monster learns to code</title>
+        <link rel="shortcut icon" href="../images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Cookie Monster">
         <meta name="description" content="Cookie Monster learns to code">
@@ -38,65 +39,151 @@
 
             <div>
                 <h1>Cookie Monster learns to code</h1>
-
                 <!-- Please place an image of the cookie monster looking happy here -->
-                (Code First Girls has no official affiliation with the Cookie Monster 😜)
+                <img src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
+                <p>(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
             </div>
 
+            <div class="">
+                <h2>Welcome to Cookie Monster's first website.</h2>
+            </div>
 
-            Welcome to Cookie Monster's first website.
+            <section>
+                <h3>About me.</h3>
+                <p>
+                    Cookie Monster loves eating cookies and talking about himself in the third person.
+                </p>
+                <p>
+                    He is currently learning to code with Code First Girls. Going over everything
+                    from how the internet works, to creating websites and version control with
+                    git. <em>A lot to cover in only 8 weeks!</em>
+                </p>
+            </section>
 
-            About me.
+            <article>
+                <h3>About coding.</h3>
 
-            Cookie Monster loves eating cookies and talking about himself in the third person. He is currently
-            learning to code with Code First Girls. Going over everything from how the internet works, to creating
-            websites and version control with git. A lot to cover in only 8 weeks!
+                <p>Everyone should learn to code, here are some pretty good reasons why...</p>
 
-            About coding.
+                <ol>
+                    <li>HTML is cool</li>
+                    <li>CSS is stylish</li>
+                    <li>JS is the best</li>
+                </ol>
 
-            Everyone should learn to code, here are some pretty good reasons why...
-            HTML is cool
-            CSS is stylish
-            JS is the best
+                <p>What do you need to create a website?</p>
+                <p>Not much!</p>
 
-            What do you need to create a website?
-            Not much!
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Obtained</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A computer (always a good start)</td>
+                            <td>
+                                <input type="checkbox" name="checkbox1" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A text editor (I am using atom)</td>
+                            <td>
+                                <input type="checkbox" name="checkbox2" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A web browser (I am using chrome)</td>
+                            <td>
+                                <input type="checkbox" name="checkbox3" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Some HTML, CSS and JS files</td>
+                            <td>
+                                <input type="checkbox" name="checkbox4" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            A computer (always a good start)
-            A text editor (I am using atom)
-            A web browser (I am using chrome)
-            Some HTML, CSS and JS files
+                <!-- place a link to your project on github here -->
+                <p>Follow my progress on <a href="#">github</a></p>
 
-            Follow my progress on github
-            <!-- place a link to your project on github here -->
+            </article>
 
-            If you want to leave me a message, then leave it here:
-            <!-- We'll put something here later -->
+            <aside>
+                <div class="">
+                    <h3>
+                        If you want to leave me a message, then leave it here:
+                    </h3>
+                    <div>
+                        <!-- We'll put something here later -->
+                        <canvas id="drawingCanvas" width="300" height="300">
+                            <noscript>
+                                <em>You'd be having more fun with Javascript enabled!</em>
+                            </noscript>
+                        </canvas>
+                    </div>
+                </div>
 
-            Or if you'd rather send the you kind words of encouragement, please use this form:
-            Name
-            Email
-            Message
+                <div class="">
+                    <form action="mailto:cookie.moster@gmail.com" method="post" enctype="text/plain">
+                        <h3>If you'd rather send the you kind words of encouragement, please use this form:</h3>
+                        <fieldset>
+                            <legend>Your details</legend>
+                            <div>
+                                <input id="name" type="text" name="name" value="">
+                                <label for="name">Name</label>
+                            </div>
+                            <div>
+                                <input id="email" type="text" name="email" value="">
+                                <label for="email">Email</label>
+                            </div>
+                            <div>
+                                <textarea id="message" name="message" rows="8" cols="80"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </aside>
+
 
             <!-- This bit down here will be the footer -->
-            Address:
-            Cookie Monster
-            Sesame Workshop
-            One Lincoln Plaza
-            New York, NY 10023
-            USA
+            <footer>
 
-            Email:
-            cookie.monster@gmail.com
+                <div class="">
+                    <h4>Address:</h4>
+                    <address>
+                        <pre>
+                            Cookie Monster
+                            Sesame Workshop
+                            One Lincoln Plaza
+                            New York, NY 10023
+                            USA
+                        </pre>
 
-            Social Media:
-            Facebook: https://www.facebook.com/CookieMonster
-            Twitter: https://twitter.com/MeCookieMonster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
-            Instagram: https://www.instagram.com/sesamestreet/?hl=en
-            LinkedIn: https://www.linkedin.com/company/cookiemonster
+                    </address>
+                </div>
 
+                <div class="">
+                    <h4>Email:</h4>
+                    <p>cookie.monster@gmail.com</p>
+                </div>
 
+                <div class="">
+                    <h4>Social Media:</h4>
+                    <a href="https://www.facebook.com/CookieMonster">Facebook</a>
+                    <a href="https://twitter.com/MeCookieMonster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+                    <a href="https://www.instagram.com/sesamestreet/?hl=en">Instagram</a>
+                    <a href="https://www.linkedin.com/company/cookiemonster">LinkedIn</a>
+                </div>
 
+            </footer>
 
         </main>
 

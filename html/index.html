@@ -13,7 +13,7 @@
 
     <body>
         <!-- Navigation. -->
-        <header class="cm-header">
+        <header class="cm-header cm-border-bottom">
             <nav class="cm-main-navbar">
                 <ul class="cm-main-list">
                     <li class="cm-navbar-list-item">
@@ -38,22 +38,22 @@
         <!-- Main section of the website -->
         <main>
 
-            <div class="cm-main-heading-wrapper">
+            <div class="cm-main-heading-wrapper cm-border-bottom">
                 <div class="cm-main-content">
                     <h1 class="cm-main-heading">Cookie Monster learns to code</h1>
                     <!-- Please place an image of the cookie monster looking happy here -->
                     <img id="cmCookieMonsterImage" src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
                     <p class="cm-disclaimer-text">(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
 
-                    <div>
+                    <div class="cm-hidden">
                         <h2 class="cm-sub-heading">Welcome to Cookie Monster's first website.</h2>
                     </div>
 
                 </div>
             </div>
 
-            <section>
-                <div class="">
+            <section class="cm-border-bottom">
+                <div class="cm-main-content cm-about-me-section">
                     <h3 class="cm-section-heading">About me.</h3>
                     <p>
                         Cookie Monster loves eating cookies and talking about himself in the third person.
@@ -67,14 +67,14 @@
 
             </section>
 
-            <article>
+            <article id="cmHomeStory" class="cm-border-bottom">
 
-                <div class="">
+                <div class="cm-main-content">
                     <h3 class="cm-section-heading">About coding.</h3>
 
                     <p>Everyone should learn to code, here are some pretty good reasons why...</p>
 
-                    <ol>
+                    <ol class="cm-generic-list">
                         <li>HTML is cool</li>
                         <li>CSS is stylish</li>
                         <li>JS is the best</li>
@@ -83,36 +83,36 @@
                     <p>What do you need to create a website?</p>
                     <p>Not much!</p>
 
-                    <table>
+                    <table class="cm-centered-table">
                         <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Obtained</th>
+                            <tr class="cm-table-row">
+                                <th class="cm-table-header">Item</th>
+                                <th class="cm-table-header cm-centered-cell">Obtained</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="cm-table-row">
                                 <td>A computer (always a good start)</td>
-                                <td>
-                                    <input type="checkbox" name="checkbox1" value="">
+                                <td class="cm-centered-cell">
+                                    <input class="cm-checkbox" type="checkbox" name="checkbox1" value="">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="cm-table-row">
                                 <td>A text editor (I am using atom)</td>
-                                <td>
-                                    <input type="checkbox" name="checkbox2" value="">
+                                <td class="cm-centered-cell">
+                                    <input class="cm-checkbox" type="checkbox" name="checkbox2" value="">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="cm-table-row">
                                 <td>A web browser (I am using chrome)</td>
-                                <td>
-                                    <input type="checkbox" name="checkbox3" value="">
+                                <td class="cm-centered-cell">
+                                    <input class="cm-checkbox" type="checkbox" name="checkbox3" value="">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="cm-table-row">
                                 <td>Some HTML, CSS and JS files</td>
-                                <td>
-                                    <input type="checkbox" name="checkbox4" value="">
+                                <td class="cm-centered-cell">
+                                    <input class="cm-checkbox" type="checkbox" name="checkbox4" value="">
                                 </td>
                             </tr>
                         </tbody>
@@ -125,10 +125,10 @@
 
             </article>
 
-            <aside>
-                <div class="">
+            <aside class="cm-border-bottom cm-message-details">
+                <div class="cm-main-content">
                     <div class="">
-                        <h3>
+                        <h3 class="cm-section-heading">
                             If you want to leave me a message, then leave it here:
                         </h3>
                         <div>
@@ -147,17 +147,18 @@
                             <fieldset>
                                 <legend>Your details</legend>
                                 <div>
-                                    <input id="name" type="text" name="name" value="">
                                     <label for="name">Name</label>
+                                    <input id="name" type="text" name="name" value="">
                                 </div>
                                 <div>
-                                    <input id="email" type="text" name="email" value="">
                                     <label for="email">Email</label>
+                                    <input id="email" type="text" name="email" value="">
                                 </div>
                                 <div>
-                                    <textarea id="message" name="message" rows="8" cols="80"></textarea>
                                     <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="8" cols="80"></textarea>
                                 </div>
+                                <input type="submit" name="" value="Submit">
                             </fieldset>
                         </form>
                     </div>
@@ -176,11 +177,11 @@
                     <h4 class="cm-minor-heading">Address:</h4>
                     <address>
                         <pre>
-                            Cookie Monster
-                            Sesame Workshop
-                            One Lincoln Plaza
-                            New York, NY 10023
-                            USA
+Cookie Monster
+Sesame Workshop
+One Lincoln Plaza
+New York, NY 10023
+USA
                         </pre>
 
                     </address>
@@ -193,10 +194,10 @@
 
                 <div class="cm-footer-section">
                     <h4 class="cm-minor-heading">Social Media:</h4>
-                    <a href="https://www.facebook.com/CookieMonster">Facebook</a>
-                    <a href="https://twitter.com/MeCookieMonster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
-                    <a href="https://www.instagram.com/sesamestreet/?hl=en">Instagram</a>
-                    <a href="https://www.linkedin.com/company/cookiemonster">LinkedIn</a>
+                    <a href="https://www.facebook.com/CookieMonster"><img class="cm-social-link" src="../icons/facebook.svg" alt=""></a>
+                    <a href="https://twitter.com/MeCookieMonster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="cm-social-link" src="../icons/twitter.svg" alt=""></a>
+                    <a href="https://www.instagram.com/sesamestreet/?hl=en"><img class="cm-social-link" src="../icons/instagram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/cookiemonster"><img class="cm-social-link" src="../icons/linkedin.svg" alt=""></a>
                 </div>
 
             </footer>

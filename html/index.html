@@ -8,27 +8,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Cookie Monster">
         <meta name="description" content="Cookie Monster learns to code">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
 
     <body>
         <!-- Navigation. -->
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
+        <header class="cm-header">
+            <nav class="cm-main-navbar">
+                <ul class="cm-main-list">
+                    <li class="cm-navbar-list-item">
+                        <a class="cm-main-navbar-link" href="#">Home</a>
                     </li>
-                    <li>
-                        <a href="#">News</a>
+                    <li class="cm-navbar-list-item">
+                        <a class="cm-main-navbar-link" href="#">News</a>
                     </li>
-                    <li>
-                        <a href="#">About</a>
+                    <li class="cm-navbar-list-item">
+                        <a class="cm-main-navbar-link" href="#">About</a>
                     </li>
-                    <li>
-                        <a href="#">Shop</a>
+                    <li class="cm-navbar-list-item">
+                        <a class="cm-main-navbar-link" href="#">Shop</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="cm-navbar-list-item">
+                        <a class="cm-main-navbar-link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -37,19 +38,21 @@
         <!-- Main section of the website -->
         <main>
 
-            <div>
-                <h1>Cookie Monster learns to code</h1>
-                <!-- Please place an image of the cookie monster looking happy here -->
-                <img src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
-                <p>(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
-            </div>
+            <div class="cm-main-heading-wrapper">
+                <div class="cm-main-content">
+                    <h1 class="cm-main-heading">Cookie Monster learns to code</h1>
+                    <!-- Please place an image of the cookie monster looking happy here -->
+                    <img id="cmCookieMonsterImage" src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
+                    <p class="cm-disclaimer-text">(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
+                </div>
 
-            <div class="">
-                <h2>Welcome to Cookie Monster's first website.</h2>
+                <div>
+                    <h2 class="cm-sub-heading">Welcome to Cookie Monster's first website.</h2>
+                </div>
             </div>
 
             <section>
-                <h3>About me.</h3>
+                <h3 class="cm-section-heading">About me.</h3>
                 <p>
                     Cookie Monster loves eating cookies and talking about himself in the third person.
                 </p>
@@ -61,7 +64,7 @@
             </section>
 
             <article>
-                <h3>About coding.</h3>
+                <h3 class="cm-section-heading">About coding.</h3>
 
                 <p>Everyone should learn to code, here are some pretty good reasons why...</p>
 
@@ -154,10 +157,10 @@
 
 
             <!-- This bit down here will be the footer -->
-            <footer>
+            <footer class="cm-footer">
 
-                <div class="">
-                    <h4>Address:</h4>
+                <div class="cm-footer-section">
+                    <h4 class="cm-minor-heading">Address:</h4>
                     <address>
                         <pre>
                             Cookie Monster
@@ -170,13 +173,13 @@
                     </address>
                 </div>
 
-                <div class="">
-                    <h4>Email:</h4>
+                <div class="cm-footer-section">
+                    <h4 class="cm-minor-heading">Email:</h4>
                     <p>cookie.monster@gmail.com</p>
                 </div>
 
-                <div class="">
-                    <h4>Social Media:</h4>
+                <div class="cm-footer-section">
+                    <h4 class="cm-minor-heading">Social Media:</h4>
                     <a href="https://www.facebook.com/CookieMonster">Facebook</a>
                     <a href="https://twitter.com/MeCookieMonster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
                     <a href="https://www.instagram.com/sesamestreet/?hl=en">Instagram</a>

@@ -1,5 +1,78 @@
 html,
 body {
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*header*/
+.cm-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #74BE79;
+    height: 60px;
+}
+
+/*top navigation bar*/
+.cm-main-navbar {
+    height: inherit;
+}
+
+.cm-main-list {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    list-style-type: none;
+}
+
+.cm-navbar-list-item {
+    display: inline-block;
+    height: inherit;
+}
+
+.cm-main-navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 150px;
+    max-width: 18vw;
+    text-decoration: none;
+    color: #174B84;
+    font-weight: bold;
+    font-size: calc(16px + 1vw);
+}
+
+.cm-main-navbar-link:hover {
+    background-color: #518554;
+    color: #06AFEB;
+}
+
+/*general main styles*/
+.cm-main-content {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*Main heading and image */
+.cm-main-heading-wrapper {
+    background-color: #FDE621;
+}
+
+.cm-main-heading {
+    margin-top: 0;
 }

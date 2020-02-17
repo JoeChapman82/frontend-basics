@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <section class="cm-border-bottom">
+            <section class="cm-border-bottom cm-about-me-wrapper">
                 <div class="cm-main-content cm-about-me-section">
                     <h3 class="cm-section-heading">About me.</h3>
                     <p>
@@ -133,7 +133,7 @@
                         </h3>
                         <div>
                             <!-- We'll put something here later -->
-                            <canvas id="drawingCanvas" width="300" height="300">
+                            <canvas id="drawingCanvas" width="600" height="300">
                                 <noscript>
                                     <em>You'd be having more fun with Javascript enabled!</em>
                                 </noscript>
@@ -144,21 +144,21 @@
                     <div class="">
                         <form action="mailto:cookie.moster@gmail.com" method="post" enctype="text/plain">
                             <h3>If you'd rather send the you kind words of encouragement, please use this form:</h3>
-                            <fieldset>
+                            <fieldset class="cm-fieldset">
                                 <legend>Your details</legend>
                                 <div>
-                                    <label for="name">Name</label>
-                                    <input id="name" type="text" name="name" value="">
+                                    <label class="cm-inline-label" for="name">Name</label>
+                                    <input class="cm-general-input cm-input-400" id="name" type="text" name="name" value="">
                                 </div>
                                 <div>
-                                    <label for="email">Email</label>
-                                    <input id="email" type="text" name="email" value="">
+                                    <label class="cm-inline-label" for="email">Email</label>
+                                    <input class="cm-general-input cm-input-400" id="email" type="text" name="email" value="">
                                 </div>
                                 <div>
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" rows="8" cols="80"></textarea>
+                                    <label class="cm-block-label" for="message">Message</label>
+                                    <textarea class="cm-general-input" id="message" name="message" rows="8" cols="80"></textarea>
                                 </div>
-                                <input type="submit" name="" value="Submit">
+                                <input class="cm-submit-input" type="submit" name="" value="Submit">
                             </fieldset>
                         </form>
                     </div>

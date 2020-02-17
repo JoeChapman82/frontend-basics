@@ -38,119 +38,129 @@
         <main>
 
             <div>
-                <h1>Cookie Monster learns to code</h1>
-                <!-- Please place an image of the cookie monster looking happy here -->
-                <img src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
-                <p>(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
+                <div class="">
+                    <h1>Cookie Monster learns to code</h1>
+                    <!-- Please place an image of the cookie monster looking happy here -->
+                    <img src="../images/cookie_monster.jpg" alt="The cookie monster" width="300" height="300">
+                    <p>(Code First Girls has no official affiliation with the Cookie Monster 😜)</p>
+
+                    <div class="">
+                        <h2>Welcome to Cookie Monster's first website.</h2>
+                    </div>
+                </div>
             </div>
 
-            <div class="">
-                <h2>Welcome to Cookie Monster's first website.</h2>
-            </div>
+
 
             <section>
-                <h3>About me.</h3>
-                <p>
-                    Cookie Monster loves eating cookies and talking about himself in the third person.
-                </p>
-                <p>
-                    He is currently learning to code with Code First Girls. Going over everything
-                    from how the internet works, to creating websites and version control with
-                    git. <em>A lot to cover in only 8 weeks!</em>
-                </p>
+                <div class="">
+                    <h3>About me.</h3>
+                    <p>
+                        Cookie Monster loves eating cookies and talking about himself in the third person.
+                    </p>
+                    <p>
+                        He is currently learning to code with Code First Girls. Going over everything
+                        from how the internet works, to creating websites and version control with
+                        git. <em>A lot to cover in only 8 weeks!</em>
+                    </p>
+                </div>
             </section>
 
             <article>
-                <h3>About coding.</h3>
+                <div class="">
+                    <h3>About coding.</h3>
 
-                <p>Everyone should learn to code, here are some pretty good reasons why...</p>
+                    <p>Everyone should learn to code, here are some pretty good reasons why...</p>
 
-                <ol>
-                    <li>HTML is cool</li>
-                    <li>CSS is stylish</li>
-                    <li>JS is the best</li>
-                </ol>
+                    <ol>
+                        <li>HTML is cool</li>
+                        <li>CSS is stylish</li>
+                        <li>JS is the best</li>
+                    </ol>
 
-                <p>What do you need to create a website?</p>
-                <p>Not much!</p>
+                    <p>What do you need to create a website?</p>
+                    <p>Not much!</p>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Obtained</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A computer (always a good start)</td>
-                            <td>
-                                <input type="checkbox" name="checkbox1" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>A text editor (I am using atom)</td>
-                            <td>
-                                <input type="checkbox" name="checkbox2" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>A web browser (I am using chrome)</td>
-                            <td>
-                                <input type="checkbox" name="checkbox3" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Some HTML, CSS and JS files</td>
-                            <td>
-                                <input type="checkbox" name="checkbox4" value="">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A computer (always a good start)</td>
+                                <td>
+                                    <input type="checkbox" name="checkbox1" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>A text editor (I am using atom)</td>
+                                <td>
+                                    <input type="checkbox" name="checkbox2" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>A web browser (I am using chrome)</td>
+                                <td>
+                                    <input type="checkbox" name="checkbox3" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Some HTML, CSS and JS files</td>
+                                <td>
+                                    <input type="checkbox" name="checkbox4" value="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <!-- place a link to your project on github here -->
-                <p>Follow my progress on <a href="#">github</a></p>
-
+                    <!-- place a link to your project on github here -->
+                    <p>Follow my progress on <a href="#">github</a></p>
+                </div>
             </article>
 
             <aside>
                 <div class="">
-                    <h3>
-                        If you want to leave me a message, then leave it here:
-                    </h3>
-                    <div>
-                        <!-- We'll put something here later -->
-                        <canvas id="drawingCanvas" width="300" height="300">
-                            <noscript>
-                                <em>You'd be having more fun with Javascript enabled!</em>
-                            </noscript>
-                        </canvas>
+                    <div class="">
+                        <h3>
+                            If you want to leave me a message, then leave it here:
+                        </h3>
+                        <div>
+                            <!-- We'll put something here later -->
+                            <canvas id="drawingCanvas" width="300" height="300">
+                                <noscript>
+                                    <em>You'd be having more fun with Javascript enabled!</em>
+                                </noscript>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <form action="mailto:cookie.moster@gmail.com" method="post" enctype="text/plain">
+                            <h3>If you'd rather send the you kind words of encouragement, please use this form:</h3>
+                            <fieldset>
+                                <legend>Your details</legend>
+                                <div>
+                                    <input id="name" type="text" name="name" value="">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div>
+                                    <input id="email" type="text" name="email" value="">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div>
+                                    <textarea id="message" name="message" rows="8" cols="80"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
-
-                <div class="">
-                    <form action="mailto:cookie.moster@gmail.com" method="post" enctype="text/plain">
-                        <h3>If you'd rather send the you kind words of encouragement, please use this form:</h3>
-                        <fieldset>
-                            <legend>Your details</legend>
-                            <div>
-                                <input id="name" type="text" name="name" value="">
-                                <label for="name">Name</label>
-                            </div>
-                            <div>
-                                <input id="email" type="text" name="email" value="">
-                                <label for="email">Email</label>
-                            </div>
-                            <div>
-                                <textarea id="message" name="message" rows="8" cols="80"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-
             </aside>
+
+        </main>
 
 
             <!-- This bit down here will be the footer -->
@@ -184,9 +194,6 @@
                 </div>
 
             </footer>
-
-        </main>
-
     </body>
 
 </html>

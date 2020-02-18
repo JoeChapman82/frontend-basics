@@ -9,7 +9,6 @@
             let y = (getOffset(eye).top) + (getOffset(eye).height / 2);
             let radians = Math.atan2(e.pageX - x, e.pageY - y);
             let rotation = (radians * (180 / Math.PI) * -1);
-            console.log(rotation);
             eye.style.transform = `rotate(${rotation}deg)`;
         });
 

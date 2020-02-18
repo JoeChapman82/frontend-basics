@@ -176,7 +176,9 @@ img {
 }
 
 #drawingCanvas {
-    border: 3px solid goldenrod;
+    border: 15px solid #B47F42;
+    border-radius: 10px;
+    background-color: rgba(44, 44, 44, 1);
     max-width: 100%;
     cursor: pointer;
 }

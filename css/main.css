@@ -26,6 +26,7 @@ img {
     left: 0;
     background-color: #74BE79;
     height: 60px;
+    z-index: 2;
 }
 
 /*top navigation bar*/
@@ -259,4 +260,37 @@ img {
     width: 50px;
     height: 50px;
     margin: .5rem;
+}
+
+#movingImageWrapper {
+    position: relative;
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#eyeContainer {
+    position: absolute;
+    top: 17.9%;
+    left: 30.2%;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+  background: #fff;
+  margin: -2px;
+}
+.eye:after {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
 }

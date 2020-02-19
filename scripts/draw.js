@@ -5,13 +5,13 @@
 
     function init() {
         ctx.lineCap = 'round'; // use rounded edges whilst drawing lines
-        ctx.lineWidth = 25;
-        ctx.strokeStyle = 'blue'; // Set the line colour to blue
+        ctx.lineWidth = 17;
+        ctx.strokeStyle = 'rgba(225, 225, 225, 1)'; // Set the line colour to white
         isDrawing = false; // instantiate variables
         lastX = 0;
         lastY = 0;
         hue = 0;
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // clear the canvas of all data
+        clearCanvas();
     }
 
     function draw(e) {
@@ -25,16 +25,22 @@
         [lastX, lastY] = [e.offsetX, e.offsetY]; // set previous x, y, coordinates to the current x, y coordinates
     }
 
+    function clearCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // clear the canvas of all data
+    }
+
     // when the mouse is clicked anywhere on the canvas
     canvas.addEventListener('mousedown', (e) => {
         isDrawing = true;
         [lastX, lastY] = [e.offsetX, e.offsetY];
     });
 
-
     canvas.addEventListener('mousemove', draw); // everytime the mouse moves, execute the draw function
     canvas.addEventListener('mouseup', () => isDrawing = false); // when mouse is depressed, set isDrawing to false
     canvas.addEventListener('mouseout', () => isDrawing = false); // when mouse exits the canvas, set isDrawing to false
     window.addEventListener('resize', init); // when the screen resizes, execute the init function
+
+    document.getElementById('canvasClearButton').addEventListener('click', clearCanvas);
+
     init();
 })();
